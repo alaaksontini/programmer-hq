@@ -1,10 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Fira+Code:wght@300;400;500;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+
 @layer base {
+    *,*:focus,*:hover{
+        outline:none;
+    }
     body {
-        @apply bg-purple-100;
+        @apply bg-slate-800 text-slate-200;
     }
     h1 {
         @apply text-2xl;
@@ -12,4 +17,18 @@
     h2 {
         @apply text-xl;
     }
+    .__btn {
+        @apply rounded bg-amber-400 py-2 text-slate-800 px-4 font-bold subpixel-antialiased
+    }
+    .__input {
+        @apply h-3/6 rounded
+    }
+}
+
+body {
+    font-family: 'Fira Code', monospace;
+    font-style: normal;
+    font-stretch: normal;
+    font-optical-sizing: auto;
+
 }
