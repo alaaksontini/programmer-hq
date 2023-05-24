@@ -21,7 +21,7 @@
         @apply rounded bg-amber-400 py-2 text-slate-800 px-4 font-bold subpixel-antialiased
     }
     .__input {
-        @apply h-3/6 rounded
+        @apply h-3/6 rounded text-black bg-slate-200 px-2 py-1;
     }
 }
 
