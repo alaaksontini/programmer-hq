@@ -11,13 +11,17 @@ export default function MainLayout({ children }) {
         <SidebarLayout>
           <h1>Left Sidebar</h1>
         </SidebarLayout>
-        <div className={"main-section w-4/6 mx-8"}>
-          <h1>Main Section</h1>
+        <div className={"main-section w-full"}>
+          <div className="__top-bar flex justify-end">
+              <div>
+                1230pt
+              </div>
+              <div className={"__profile-pic w-1/6"}>
+                <div className={"rounded-full w-full bg-slate-500"}></div>
+              </div>
+          </div>
           {children}
         </div>
-        <SidebarLayout>
-          <h1>Right Sidebar</h1>
-        </SidebarLayout>
       </div>
     </>
   )
